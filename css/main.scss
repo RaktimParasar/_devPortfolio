@@ -1,0 +1,204 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  font-family: "Poppins", sans-serif;
+}
+
+p,
+h1 {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+}
+
+.nav-container {
+  // background: #333333;
+  a {
+    color: #333333;
+  }
+}
+
+.hero-wrapper {
+  display: flex;
+  padding: 0 5rem;
+  width: 100%;
+  height: 90vh;
+  flex-direction: row;
+  align-items: center;
+  img {
+    order: 2;
+    width: 500px;
+  }
+  .hero-text-container {
+    order: 1;
+    width: 40%;
+    text-align: left;
+    h1 {
+      font-size: 4rem;
+    }
+    p {
+      color: #333333;
+      margin-top: 24px;
+      margin-bottom: 36px;
+    }
+    button {
+      background: #333333;
+      color: white;
+      border: none;
+      font-size: 20px;
+      font-weight: bold;
+      padding: 12px 40px;
+      border-radius: 10px;
+      letter-spacing: 1px;
+      cursor: pointer;
+      span {
+        margin-left: 0.5rem;
+      }
+    }
+  }
+}
+
+.featured,
+.portfolio-container {
+  display: grid;
+  grid-template-columns: 40% auto;
+}
+
+.left,
+.portfolio-left {
+  display: grid;
+  place-content: center;
+}
+
+.right {
+  margin-left: 2rem;
+  margin-top: 1rem;
+}
+
+.skills {
+  margin-top: -5rem;
+  margin-bottom: -7rem;
+  padding-top: 7rem;
+}
+
+.skills-container ul {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-gap: 1rem;
+}
+
+.portfolio {
+  padding-top: 7rem;
+}
+.portfolio-container img {
+  margin-left: 2rem;
+}
+
+@media only screen and (max-width: 768px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    .logo-text {
+      font-weight: bold;
+    }
+    ul {
+      display: flex;
+      a {
+        display: block;
+        padding: 0 1rem;
+      }
+    }
+  }
+
+  .hero-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .hero-text-container {
+      order: 2;
+      width: 100%;
+      text-align: center;
+      h1 {
+        font-size: 20px;
+      }
+    }
+    img {
+      order: 1;
+    }
+  }
+
+  section {
+    padding: 4rem 2rem;
+    text-align: left;
+  }
+
+  .subtitle {
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 0.2rem;
+    font-size: 0.85rem;
+  }
+
+  .featured-title {
+    color: #333333;
+    font-weight: bold;
+    font-size: 1.3rem;
+    display: block;
+  }
+
+  .featured-desc {
+    margin-bottom: 1rem;
+    font-size: 0.85rem;
+    line-height: 1.8rem;
+    font-weight: 500;
+  }
+
+  .skills {
+    background: aquamarine;
+  }
+
+  .skills-container ul li {
+    background: white;
+    padding: 2rem;
+    text-align: center;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+    .skill-title {
+      font-weight: bold;
+    }
+    .skill-desc {
+      margin-bottom: 2rem;
+    }
+  }
+
+  .portfolio {
+    background: whitesmoke;
+  }
+
+  .portfolio-container a img {
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+  }
+}
