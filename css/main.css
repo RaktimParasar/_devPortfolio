@@ -7,7 +7,6 @@
 body {
   margin: 0;
   padding: 0;
-  height: 100vh;
   font-family: "Poppins", sans-serif;
 }
 
@@ -32,204 +31,33 @@ img {
 }
 
 .nav-container a {
-  color: #333333;
+  color: #274484;
 }
 
-.hero-wrapper {
+header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 0 5rem;
-  width: 100%;
-  height: 90vh;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 2rem;
 }
 
-.hero-wrapper img {
-  -webkit-box-ordinal-group: 3;
-      -ms-flex-order: 2;
-          order: 2;
-  width: 500px;
-}
-
-.hero-wrapper .hero-text-container {
-  -webkit-box-ordinal-group: 2;
-      -ms-flex-order: 1;
-          order: 1;
-  width: 40%;
-  text-align: left;
-}
-
-.hero-wrapper .hero-text-container h1 {
-  font-size: 4rem;
-}
-
-.hero-wrapper .hero-text-container p {
-  color: #333333;
-  margin-top: 24px;
-  margin-bottom: 36px;
-}
-
-.hero-wrapper .hero-text-container button {
-  background: #333333;
-  color: white;
-  border: none;
-  font-size: 20px;
+header .logo-text {
+  font-size: 1.5rem;
   font-weight: bold;
-  padding: 12px 40px;
-  border-radius: 10px;
-  letter-spacing: 1px;
-  cursor: pointer;
+  border: 2px solid #7a8ca6;
+  padding: 0 5px;
 }
 
-.hero-wrapper .hero-text-container button span {
-  margin-left: 0.5rem;
+header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-.featured,
-.portfolio-container {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 40% auto;
-      grid-template-columns: 40% auto;
-}
-
-.left,
-.portfolio-left {
-  display: -ms-grid;
-  display: grid;
-  place-content: center;
-}
-
-.right {
-  margin-left: 2rem;
-  margin-top: 1rem;
-}
-
-.skills {
-  margin-top: -5rem;
-  margin-bottom: -7rem;
-  padding-top: 7rem;
-}
-
-.skills-container ul {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (auto)[2];
-      grid-template-columns: repeat(2, auto);
-  grid-gap: 1rem;
-}
-
-.portfolio {
-  padding-top: 7rem;
-}
-
-.portfolio-container img {
-  margin-left: 2rem;
-}
-
-@media only screen and (max-width: 768px) {
-  header {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    padding: 1rem;
-  }
-  header .logo-text {
-    font-weight: bold;
-  }
-  header ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  header ul a {
-    display: block;
-    padding: 0 1rem;
-  }
-  .hero-wrapper {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .hero-wrapper .hero-text-container {
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
-    width: 100%;
-    text-align: center;
-  }
-  .hero-wrapper .hero-text-container h1 {
-    font-size: 20px;
-  }
-  .hero-wrapper img {
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
-  }
-  section {
-    padding: 4rem 2rem;
-    text-align: left;
-  }
-  .subtitle {
-    text-transform: uppercase;
-    font-weight: bold;
-    letter-spacing: 0.2rem;
-    font-size: 0.85rem;
-  }
-  .featured-title {
-    color: #333333;
-    font-weight: bold;
-    font-size: 1.3rem;
-    display: block;
-  }
-  .featured-desc {
-    margin-bottom: 1rem;
-    font-size: 0.85rem;
-    line-height: 1.8rem;
-    font-weight: 500;
-  }
-  .skills {
-    background: aquamarine;
-  }
-  .skills-container ul li {
-    background: white;
-    padding: 2rem;
-    text-align: center;
-    border-radius: 1rem;
-    margin-bottom: 1rem;
-  }
-  .skills-container ul li .skill-title {
-    font-weight: bold;
-  }
-  .skills-container ul li .skill-desc {
-    margin-bottom: 2rem;
-  }
-  .portfolio {
-    background: whitesmoke;
-  }
-  .portfolio-container a img {
-    border-radius: 1rem;
-    margin-bottom: 1rem;
-  }
+header ul a {
+  padding: 0 1rem;
 }
 /*# sourceMappingURL=main.css.map */
