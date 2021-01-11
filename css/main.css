@@ -60,4 +60,59 @@ header ul {
 header ul a {
   padding: 0 1rem;
 }
+
+.hero-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 3rem;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.hero-wrapper .hero-image {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+  width: 40%;
+}
+
+.hero-wrapper .hero-text-container {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+  width: 50%;
+  padding: 2rem 0;
+  text-align: left;
+}
+
+.hero-wrapper .hero-text-container h1 {
+  max-width: 500px;
+  font-size: 3rem;
+  color: #274484;
+}
+
+.hero-wrapper .hero-text-container p {
+  max-width: 600px;
+  color: #7a8ca6;
+  margin-top: 24px;
+  margin-bottom: 36px;
+}
+
+.hero-wrapper .hero-text-container button {
+  background: #1e90d9;
+  color: white;
+  border: none;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 12px 40px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.hero-wrapper .hero-text-container button span {
+  margin-left: 0.5rem;
+}
 /*# sourceMappingURL=main.css.map */
