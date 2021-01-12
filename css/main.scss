@@ -1,10 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
 // colors
-$wildsand: #f7f7f7;
+$wildsand: #f7f5f6;
 $morningglory: #91c5df;
 $curiousblue: #1e90d9;
-$bermudagray: #7a8ca6;
+$bermudagray: #616060;
 $bayofmany: #274484;
 
 * {
@@ -63,6 +63,7 @@ header {
 
 .hero-wrapper {
   display: flex;
+  background: $wildsand;
   padding: 3rem;
   width: 100%;
   justify-content: center;
@@ -91,8 +92,8 @@ header {
       color: white;
       border: none;
       font-size: 20px;
-      font-weight: bold;
-      padding: 12px 40px;
+      font-weight: 500;
+      padding: 12px 30px;
       border-radius: 10px;
       cursor: pointer;
       span {
@@ -119,21 +120,52 @@ header {
 //   margin-top: 1rem;
 // }
 
-// .skills {
-//   margin-top: -5rem;
-//   margin-bottom: -7rem;
-//   padding-top: 7rem;
-// }
+.skills {
+  margin-top: -5rem;
+  padding-top: 7rem;
+  background: $morningglory;
+  h1 {
+    font-size: 30px;
+    font-weight: 700;
+    color: $bermudagray;
+    padding: 0 2rem;
+    margin-top: -3rem;
+    margin-bottom: 1rem;
+  }
+}
 
-// .skills-container ul {
-//   display: grid;
-//   grid-template-columns: repeat(2, auto);
-//   grid-gap: 1rem;
-// }
+.skills-container ul {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-gap: 1rem;
+  padding: 0 2rem;
+  li {
+    background: $bayofmany;
+    color: $wildsand;
+    padding: 2rem;
+    text-align: center;
+    border-radius: 1rem;
+    margin-bottom: -5rem;
+    .skills-icon {
+      height: 100px;
+      display: grid;
+      place-content: center;
+      margin: 0 auto;
+      width: 80px;
+    }
+    .skill-title {
+      font-weight: bold;
+    }
+    .skill-desc {
+      margin-bottom: 2rem;
+    }
+  }
+}
 
-// .portfolio {
-//   padding-top: 7rem;
-// }
+.portfolio {
+  padding-top: 7rem;
+  // background: $curiousblue;
+}
 // .portfolio-container img {
 //   margin-left: 2rem;
 // }
@@ -197,24 +229,6 @@ header {
   //   font-size: 0.85rem;
   //   line-height: 1.8rem;
   //   font-weight: 500;
-  // }
-
-  // .skills {
-  //   background: aquamarine;
-  // }
-
-  // .skills-container ul li {
-  //   background: white;
-  //   padding: 2rem;
-  //   text-align: center;
-  //   border-radius: 1rem;
-  //   margin-bottom: 1rem;
-  //   .skill-title {
-  //     font-weight: bold;
-  //   }
-  //   .skill-desc {
-  //     margin-bottom: 2rem;
-  //   }
   // }
 
   // .portfolio {

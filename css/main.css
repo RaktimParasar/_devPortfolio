@@ -47,7 +47,7 @@ header {
 header .logo-text {
   font-size: 1.5rem;
   font-weight: bold;
-  border: 2px solid #7a8ca6;
+  border: 2px solid #616060;
   padding: 0 5px;
 }
 
@@ -65,6 +65,7 @@ header ul a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  background: #f7f5f6;
   padding: 3rem;
   width: 100%;
   -webkit-box-pack: center;
@@ -96,7 +97,7 @@ header ul a {
 
 .hero-wrapper .hero-text-container p {
   max-width: 600px;
-  color: #7a8ca6;
+  color: #616060;
   margin-top: 24px;
   margin-bottom: 36px;
 }
@@ -106,13 +107,67 @@ header ul a {
   color: white;
   border: none;
   font-size: 20px;
-  font-weight: bold;
-  padding: 12px 40px;
+  font-weight: 500;
+  padding: 12px 30px;
   border-radius: 10px;
   cursor: pointer;
 }
 
 .hero-wrapper .hero-text-container button span {
   margin-left: 0.5rem;
+}
+
+.skills {
+  margin-top: -5rem;
+  padding-top: 7rem;
+  background: #91c5df;
+}
+
+.skills h1 {
+  font-size: 30px;
+  font-weight: 700;
+  color: #616060;
+  padding: 0 2rem;
+  margin-top: -3rem;
+  margin-bottom: 1rem;
+}
+
+.skills-container ul {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (auto)[3];
+      grid-template-columns: repeat(3, auto);
+  grid-gap: 1rem;
+  padding: 0 2rem;
+}
+
+.skills-container ul li {
+  background: #274484;
+  color: #f7f5f6;
+  padding: 2rem;
+  text-align: center;
+  border-radius: 1rem;
+  margin-bottom: -5rem;
+}
+
+.skills-container ul li .skills-icon {
+  height: 100px;
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+  margin: 0 auto;
+  width: 80px;
+}
+
+.skills-container ul li .skill-title {
+  font-weight: bold;
+}
+
+.skills-container ul li .skill-desc {
+  margin-bottom: 2rem;
+}
+
+.portfolio {
+  padding-top: 7rem;
 }
 /*# sourceMappingURL=main.css.map */
