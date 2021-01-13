@@ -7,6 +7,7 @@
 body {
   margin: 0;
   padding: 0;
+  height: 100vh;
   font-family: "Poppins", sans-serif;
 }
 
@@ -117,6 +118,11 @@ header ul a {
   margin-left: 0.5rem;
 }
 
+section {
+  padding: 4rem 5rem;
+  text-align: left;
+}
+
 .skills {
   margin-top: -5rem;
   padding-top: 7rem;
@@ -127,7 +133,6 @@ header ul a {
   font-size: 30px;
   font-weight: 700;
   color: #616060;
-  padding: 0 2rem;
   margin-top: -3rem;
   margin-bottom: 1rem;
 }
@@ -138,13 +143,12 @@ header ul a {
   -ms-grid-columns: (auto)[3];
       grid-template-columns: repeat(3, auto);
   grid-gap: 1rem;
-  padding: 0 2rem;
 }
 
 .skills-container ul li {
   background: #274484;
   color: #f7f5f6;
-  padding: 2rem;
+  padding: 1rem;
   text-align: center;
   border-radius: 1rem;
   margin-bottom: -5rem;
@@ -167,7 +171,66 @@ header ul a {
   margin-bottom: 2rem;
 }
 
-.portfolio {
+.project {
   padding-top: 7rem;
+  background: #f7f5f6;
+}
+
+.project-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% auto;
+      grid-template-columns: 50% auto;
+}
+
+.project-container-right {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto 50%;
+      grid-template-columns: auto 50%;
+}
+
+.project-left {
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+}
+
+.project-header {
+  text-transform: uppercase;
+  color: #1e90d9;
+  font-weight: bold;
+  letter-spacing: 0.2rem;
+  font-size: 0.85rem;
+}
+
+.project-title {
+  color: #274484;
+  font-weight: bold;
+  font-size: 1.3rem;
+  display: block;
+}
+
+.project-desc {
+  margin-bottom: 1rem;
+  color: #616060;
+  font-size: 0.85rem;
+  line-height: 1.8rem;
+  font-weight: 500;
+}
+
+.project-img {
+  border-radius: 1rem;
+  margin-bottom: 3rem;
+}
+
+.right {
+  margin-left: 2rem;
+  margin-top: 1rem;
+}
+
+.left {
+  margin-left: 3rem;
+  margin-top: 1rem;
 }
 /*# sourceMappingURL=main.css.map */
