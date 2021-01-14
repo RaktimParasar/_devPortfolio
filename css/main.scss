@@ -4,7 +4,7 @@
 $wildsand: #f7f5f6;
 $morningglory: #91c5df;
 $curiousblue: #1e90d9;
-$bermudagray: #616060;
+$bermudagray: #333333;
 $bayofmany: #274484;
 
 * {
@@ -32,6 +32,7 @@ ul {
 
 a {
   text-decoration: none;
+  color: unset;
 }
 
 img {
@@ -221,6 +222,22 @@ section {
   margin-top: 1rem;
 }
 
+.contact {
+  background: $bayofmany;
+  color: $wildsand;
+  display: flex;
+  justify-content: space-around;
+}
+
+footer {
+  background: $bermudagray;
+  color: $curiousblue;
+  text-align: center;
+  padding: 1rem;
+  .flat-icons {
+    font-size: 13px;
+  }
+}
 @media only screen and (max-width: 768px) {
   // header {
   // display: flex;
