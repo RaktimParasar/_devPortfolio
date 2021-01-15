@@ -76,11 +76,10 @@ header ul a {
 }
 
 .hero-wrapper .hero-image {
-  width: 40%;
+  max-width: 500px;
 }
 
 .hero-wrapper .hero-text-container {
-  width: 50%;
   padding: 2rem 0;
   text-align: left;
 }
@@ -283,7 +282,8 @@ footer .flat-icons {
     padding: 1rem;
   }
   .hero-wrapper {
-    margin-bottom: 1rem;
+    padding: 2rem;
+    margin-bottom: 4rem;
   }
   .hero-wrapper .hero-text-container h1 {
     font-size: 2rem;
@@ -291,9 +291,42 @@ footer .flat-icons {
   .hero-wrapper .hero-text-container button {
     font-size: 18px;
   }
+  .hero-wrapper .hero-image {
+    max-width: 400px;
+  }
 }
 
 @media only screen and (max-width: 768px) {
+  .hero-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .hero-wrapper .hero-text-container {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    text-align: center;
+  }
+  .hero-wrapper .hero-text-container h1 {
+    max-width: 100%;
+  }
+  .hero-wrapper .hero-text-container p {
+    max-width: 100%;
+  }
+  .hero-wrapper img {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    max-width: 300px;
+  }
   .project-container {
     display: -webkit-box;
     display: -ms-flexbox;
