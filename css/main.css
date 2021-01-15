@@ -76,16 +76,10 @@ header ul a {
 }
 
 .hero-wrapper .hero-image {
-  -webkit-box-ordinal-group: 3;
-      -ms-flex-order: 2;
-          order: 2;
   width: 40%;
 }
 
 .hero-wrapper .hero-text-container {
-  -webkit-box-ordinal-group: 2;
-      -ms-flex-order: 1;
-          order: 1;
   width: 50%;
   padding: 2rem 0;
   text-align: left;
@@ -178,23 +172,35 @@ section {
 }
 
 .project-container {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 50% auto;
-      grid-template-columns: 50% auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 2rem;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
 }
 
-.project-container-right {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: auto 50%;
-      grid-template-columns: auto 50%;
+.project-img {
+  max-width: 500px;
+  border-radius: 20px;
 }
 
-.project-left {
+.right {
+  margin-left: 1rem;
+}
+
+.project-info {
   display: -ms-grid;
   display: grid;
   place-content: center;
+}
+
+.left {
+  margin-left: 3rem;
 }
 
 .project-header {
@@ -220,21 +226,6 @@ section {
   font-weight: 500;
 }
 
-.project-img {
-  border-radius: 1rem;
-  margin-bottom: 3rem;
-}
-
-.right {
-  margin-left: 2rem;
-  margin-top: 1rem;
-}
-
-.left {
-  margin-left: 3rem;
-  margin-top: 1rem;
-}
-
 .contact {
   background: #274484;
   color: #f7f5f6;
@@ -245,6 +236,37 @@ section {
       justify-content: space-around;
 }
 
+.contact span {
+  margin-right: 0.5rem;
+}
+
+.contact button {
+  background: #1e90d9;
+  color: white;
+  border: none;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 12px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.contact h3 {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.contact li {
+  margin-bottom: 0.5rem;
+  font-size: 16px;
+}
+
+.contact-desc {
+  width: 300px;
+  margin-bottom: 1rem;
+  font-size: 16px;
+}
+
 footer {
   background: #333333;
   color: #1e90d9;
@@ -253,6 +275,49 @@ footer {
 }
 
 footer .flat-icons {
-  font-size: 13px;
+  font-size: 10px;
+}
+
+@media only screen and (max-width: 1200px) {
+  header {
+    padding: 1rem;
+  }
+  .hero-wrapper {
+    margin-bottom: 1rem;
+  }
+  .hero-wrapper .hero-text-container h1 {
+    font-size: 2rem;
+  }
+  .hero-wrapper .hero-text-container button {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .project-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+  .project-info {
+    margin-bottom: 1rem;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .project-img {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .right,
+  .left {
+    margin-left: 0;
+  }
 }
 /*# sourceMappingURL=main.css.map */
