@@ -39,6 +39,7 @@ img {
 }
 
 .nav-container {
+  background: $wildsand;
   a {
     color: $bayofmany;
   }
@@ -50,9 +51,10 @@ header {
   padding: 2rem;
   .logo-text {
     font-size: 1.5rem;
-    font-weight: bold;
+    font-weight: 900;
     border: 2px solid $bermudagray;
     padding: 0 5px;
+    background: $morningglory;
   }
   ul {
     display: flex;
@@ -267,13 +269,6 @@ footer {
 }
 
 @media only screen and (max-width: 768px) {
-  header {
-    ul {
-      a {
-        display: block;
-      }
-    }
-  }
   .hero-wrapper {
     display: flex;
     flex-direction: column;
@@ -336,5 +331,24 @@ footer {
   .right,
   .left {
     margin-left: 0;
+  }
+}
+
+@media only screen and (max-width: 678px) {
+  header {
+    ul {
+      a {
+        display: block;
+        font-size: 13px;
+        padding: 10px;
+      }
+    }
+  }
+  .contact {
+    display: block;
+    text-align: center;
+  }
+  .contact-desc {
+    width: 100%;
   }
 }

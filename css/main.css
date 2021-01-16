@@ -31,6 +31,10 @@ img {
   width: 100%;
 }
 
+.nav-container {
+  background: #f7f5f6;
+}
+
 .nav-container a {
   color: #274484;
 }
@@ -47,9 +51,10 @@ header {
 
 header .logo-text {
   font-size: 1.5rem;
-  font-weight: bold;
+  font-weight: 900;
   border: 2px solid #333333;
   padding: 0 5px;
+  background: #91c5df;
 }
 
 header ul {
@@ -298,9 +303,6 @@ footer .flat-icons {
 }
 
 @media only screen and (max-width: 768px) {
-  header ul a {
-    display: block;
-  }
   .hero-wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -377,6 +379,21 @@ footer .flat-icons {
   .right,
   .left {
     margin-left: 0;
+  }
+}
+
+@media only screen and (max-width: 678px) {
+  header ul a {
+    display: block;
+    font-size: 13px;
+    padding: 10px;
+  }
+  .contact {
+    display: block;
+    text-align: center;
+  }
+  .contact-desc {
+    width: 100%;
   }
 }
 /*# sourceMappingURL=main.css.map */
