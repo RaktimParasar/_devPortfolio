@@ -7,7 +7,6 @@
 body {
   margin: 0;
   padding: 0;
-  height: 100vh;
   font-family: "Poppins", sans-serif;
 }
 
@@ -283,7 +282,6 @@ footer .flat-icons {
   }
   .hero-wrapper {
     padding: 2rem;
-    margin-bottom: 4rem;
   }
   .hero-wrapper .hero-text-container h1 {
     font-size: 2rem;
@@ -294,9 +292,15 @@ footer .flat-icons {
   .hero-wrapper .hero-image {
     max-width: 400px;
   }
+  .skills {
+    margin-top: 0;
+  }
 }
 
 @media only screen and (max-width: 768px) {
+  header ul a {
+    display: block;
+  }
   .hero-wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -327,6 +331,26 @@ footer .flat-icons {
             order: 1;
     max-width: 300px;
   }
+  section {
+    padding: 2rem;
+  }
+  .skills {
+    padding-top: 0;
+  }
+  .skills h1 {
+    text-align: center;
+    padding: 20px 0;
+  }
+  .skills-container ul {
+    display: block;
+  }
+  .skills-container ul li {
+    margin-bottom: 1rem;
+  }
+  .skills-container ul li .skills-icon {
+    height: 50px;
+    width: 50px;
+  }
   .project-container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -347,6 +371,8 @@ footer .flat-icons {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
+    max-width: 400px;
+    margin-bottom: 1rem;
   }
   .right,
   .left {

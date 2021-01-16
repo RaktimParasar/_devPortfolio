@@ -14,7 +14,6 @@ $bayofmany: #274484;
 body {
   margin: 0;
   padding: 0;
-  height: 100vh;
   font-family: "Poppins", sans-serif;
 }
 
@@ -250,7 +249,6 @@ footer {
   }
   .hero-wrapper {
     padding: 2rem;
-    margin-bottom: 4rem;
     .hero-text-container {
       h1 {
         font-size: 2rem;
@@ -263,9 +261,19 @@ footer {
       max-width: 400px;
     }
   }
+  .skills {
+    margin-top: 0;
+  }
 }
 
 @media only screen and (max-width: 768px) {
+  header {
+    ul {
+      a {
+        display: block;
+      }
+    }
+  }
   .hero-wrapper {
     display: flex;
     flex-direction: column;
@@ -286,6 +294,28 @@ footer {
     }
   }
 
+  section {
+    padding: 2rem;
+  }
+
+  .skills {
+    padding-top: 0;
+    h1 {
+      text-align: center;
+      padding: 20px 0;
+    }
+  }
+  .skills-container ul {
+    display: block;
+    li {
+      margin-bottom: 1rem;
+      .skills-icon {
+        height: 50px;
+        width: 50px;
+      }
+    }
+  }
+
   .project-container {
     display: flex;
     flex-direction: column;
@@ -299,6 +329,8 @@ footer {
 
   .project-img {
     order: 1;
+    max-width: 400px;
+    margin-bottom: 1rem;
   }
 
   .right,
