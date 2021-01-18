@@ -105,6 +105,7 @@ header ul a {
   background: #1e90d9;
   color: white;
   border: none;
+  outline: none;
   font-size: 20px;
   font-weight: 500;
   padding: 12px 30px;
@@ -243,10 +244,11 @@ section {
   margin-right: 0.5rem;
 }
 
-.contact button {
+.contact .email {
   background: #1e90d9;
   color: white;
   border: none;
+  outline: none;
   font-size: 20px;
   font-weight: 500;
   padding: 12px 20px;

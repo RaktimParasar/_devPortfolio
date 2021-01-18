@@ -91,6 +91,7 @@ header {
       background: $curiousblue;
       color: white;
       border: none;
+      outline: none;
       font-size: 20px;
       font-weight: 500;
       padding: 12px 30px;
@@ -209,10 +210,11 @@ section {
   span {
     margin-right: 0.5rem;
   }
-  button {
+  .email {
     background: $curiousblue;
     color: white;
     border: none;
+    outline: none;
     font-size: 20px;
     font-weight: 500;
     padding: 12px 20px;
