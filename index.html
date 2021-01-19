@@ -20,9 +20,9 @@
         <a href="/" class="logo-text">RP</a>
         <nav>
           <ul>
-            <li><a class="hover-upwards" href="#about_me">About Me</a></li>
-            <li><a class="hover-upwards" href="#projects">Projects</a></li>
-            <li><a class="hover-upwards" href="#contact">Contact</a></li>
+            <li><a href="#about_me">About Me</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
       </header>
@@ -32,15 +32,18 @@
 
     <div class="hero-wrapper" id="about_me">
       <div class="hero-text-container">
-        <h1>Beautifuly Crafted Web Experience</h1>
-        <p>
+        <h1 class="stagger_1">Beautifuly Crafted Web Experience</h1>
+        <p class="stagger_1">
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum,
           dolorum? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic
           inventore repellendus molestias, dignissimos atque iusto officia
           veniam praesentium odio quis itaque placeat quisquam perspiciatis.
         </p>
-        <button id="explore">
-          Explore <span><i class="fas fa-angle-double-right"></i></span>
+        <button id="explore" class="stagger_1">
+          Explore
+          <span>
+            <i class="far fa-hand-point-right arrow"></i>
+          </span>
         </button>
       </div>
       <div class="hero-image">
@@ -54,7 +57,7 @@
       <h1 id="tech_stack">Technologies I Have Worked With</h1>
       <div class="skills-container">
         <ul>
-          <li class="transition2">
+          <li class="transition_up">
             <div class="skills-icon">
               <img src="./assets/html-5.svg" alt="html" />
             </div>
@@ -64,7 +67,7 @@
               adipisicing elit. Dolor, laudantium.
             </p>
           </li>
-          <li class="transition2">
+          <li class="transition_up">
             <div class="skills-icon">
               <img src="./assets/css.svg" alt="css" />
             </div>
@@ -75,7 +78,7 @@
               eligendi reiciendis eaque deserunt?
             </p>
           </li>
-          <li class="transition2">
+          <li class="transition_up">
             <div class="skills-icon">
               <img src="./assets/js-file.svg" alt="JavaScript" />
             </div>
@@ -94,7 +97,7 @@
     <!-- Projects -->
 
     <section class="project" id="projects">
-      <div class="project-container">
+      <div class="project-container transition_right">
         <div class="project-info">
           <p class="project-header">Lorem, ipsum.</p>
           <p class="project-title">Lorem, ipsum dolor.</p>
@@ -112,7 +115,7 @@
           />
         </div>
       </div>
-      <div class="project-container">
+      <div class="project-container transition_left">
         <div>
           <img
             class="project-img"
@@ -233,5 +236,15 @@
       </p>
     </footer>
   </body>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"
+    integrity="sha512-1dalHDkG9EtcOmCnoCjiwQ/HEB5SDNqw8d4G2MKoNwjiwMNeBAkudsBCmSlMnXdsH8Bm0mOd3tl/6nL5y0bMaQ=="
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollTrigger.min.js"
+    integrity="sha512-QcYm1q7RbnXmwY7HJ0H7938IS0MalTPYqGUF0fIwQgEjMBt2tqjDBt+R5I+ppdwEohjMdHnFU0H+RxmrGQ8qcg=="
+    crossorigin="anonymous"
+  ></script>
   <script src="./js/script.js"></script>
 </html>
