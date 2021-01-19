@@ -6,6 +6,8 @@ $morningglory: #91c5df;
 $curiousblue: #1e90d9;
 $bermudagray: #333333;
 $bayofmany: #274484;
+//transition
+$animate: all 0.2s ease-in-out;
 
 * {
   box-sizing: border-box;
@@ -58,8 +60,25 @@ header {
   }
   ul {
     display: flex;
+    width: 100%;
     a {
-      padding: 0 1rem;
+      margin-left: 1rem;
+      position: relative;
+    }
+    a:after {
+      content: "";
+      position: absolute;
+      display: block;
+      height: 3px;
+      background: $curiousblue;
+      left: 50%;
+      margin-bottom: 1px;
+      width: 0;
+      transition: $animate;
+    }
+    a:hover:after {
+      width: 100%;
+      left: 0;
     }
   }
 }
@@ -342,7 +361,7 @@ footer {
       a {
         display: block;
         font-size: 13px;
-        padding: 10px;
+        padding-top: 10px;
       }
     }
   }
