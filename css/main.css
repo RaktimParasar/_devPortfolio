@@ -261,9 +261,12 @@ section {
 
 .skills-container ul li .skill-title {
   font-weight: bold;
+  letter-spacing: 1px;
 }
 
 .skills-container ul li .skill-desc {
+  font-size: 15px;
+  margin-top: 10px;
   margin-bottom: 2rem;
 }
 
