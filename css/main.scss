@@ -235,6 +235,12 @@ section {
 .project {
   padding-top: 7rem;
   background: $wildsand;
+  h1 {
+    font-size: 40px;
+    font-weight: 700;
+    color: $bermudagray;
+    margin-bottom: 3rem;
+  }
 }
 
 .project-container {

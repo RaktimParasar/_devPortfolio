@@ -275,6 +275,13 @@ section {
   background: #f7f5f6;
 }
 
+.project h1 {
+  font-size: 40px;
+  font-weight: 700;
+  color: #333333;
+  margin-bottom: 3rem;
+}
+
 .project-container {
   display: -webkit-box;
   display: -ms-flexbox;
