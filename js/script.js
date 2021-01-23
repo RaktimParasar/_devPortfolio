@@ -40,8 +40,8 @@ t1.from(
 );
 
 gsap.from(".hero-image", {
-  stagger: 0.2,
-  scale: 0.1,
+  stagger: 0.1,
+  scale: 0.5,
   duration: 1,
   ease: "back.out(1.7)",
 });
@@ -73,7 +73,7 @@ gsap.from(".transition_left", {
     trigger: ".transition_left",
     start: "top bottom",
   },
-  x: -50,
+  y: -50,
   opacity: 0,
   duration: 1.2,
   stagger: 0.6,

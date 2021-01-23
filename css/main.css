@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Sanchez&display=swap");
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -112,6 +112,18 @@ header ul a:hover:after {
   max-width: 500px;
   font-size: 3rem;
   color: #274484;
+  position: relative;
+}
+
+.hero-wrapper .hero-text-container h1:before {
+  content: open-quote;
+  position: absolute;
+  top: -5rem;
+  left: -0.5rem;
+  color: #e0d9dd;
+  font-size: 18rem;
+  font-family: "Sanchez", serif;
+  z-index: -1;
 }
 
 .hero-wrapper .hero-text-container p {
@@ -119,6 +131,35 @@ header ul a:hover:after {
   color: #333333;
   margin-top: 24px;
   margin-bottom: 36px;
+  font-size: 20px;
+}
+
+.hero-wrapper .hero-text-container p strong {
+  position: relative;
+}
+
+.hero-wrapper .hero-text-container p strong::after {
+  content: "";
+  background: rgba(145, 197, 223, 0.25);
+  position: absolute;
+  left: 12px;
+  bottom: -6px;
+  width: calc(100% - 8px);
+  height: calc(100% - 8px);
+  z-index: -1;
+  -webkit-transition: 0.35s cubic-bezier(0.25, 0.1, 0, 2.05);
+  transition: 0.35s cubic-bezier(0.25, 0.1, 0, 2.05);
+}
+
+.hero-wrapper .hero-text-container p strong:hover:after {
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 100%;
+}
+
+.hero-wrapper .hero-text-container p a {
+  color: #1e90d9;
 }
 
 .hero-wrapper .hero-text-container button {
@@ -127,7 +168,7 @@ header ul a:hover:after {
   border: none;
   outline: none;
   font-size: 20px;
-  font-weight: 500;
+  font-weight: 700;
   padding: 12px 30px;
   border-radius: 10px;
   cursor: pointer;
@@ -202,7 +243,7 @@ section {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
   -webkit-box-align: left;
       -ms-flex-align: left;
           align-items: left;
@@ -211,6 +252,8 @@ section {
 .project-img {
   max-width: 500px;
   border-radius: 20px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .right {
@@ -238,16 +281,17 @@ section {
 .project-title {
   color: #274484;
   font-weight: bold;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   display: block;
 }
 
 .project-desc {
   margin-bottom: 1rem;
   color: #333333;
-  font-size: 0.85rem;
+  font-size: 16px;
   line-height: 1.8rem;
   font-weight: 500;
+  max-width: 600px;
 }
 
 .contact {
@@ -395,7 +439,6 @@ footer .flat-icons {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
-    max-width: 400px;
     margin-bottom: 1rem;
   }
   .right,

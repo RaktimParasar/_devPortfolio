@@ -1,0 +1,12 @@
+<!--I describe myself as a passionate developer who is
+          specifically engaged in the development of web applications on the
+          client-side of the web. My workflow includes building out the visual
+          components of a website from designs and making it interactive and
+          convenient.</br> 
+          Aside from coding, I like to create content on Instagram
+          about documenting my learning process from the challenges that I take
+          part in several coding challenge websites. Also, I write about the
+          experience with different technologies used on my side-projects.</br>
+          In my
+          free time, I started to make a habit of reading a book or playing
+          mobile games, and binge-watching my favorite Tv shows. -->
