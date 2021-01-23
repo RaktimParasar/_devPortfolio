@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Sanchez&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Poppins&family=Sanchez&display=swap");
+
 // colors
 $wildsand: #f7f5f6;
 $morningglory: #91c5df;
@@ -162,15 +163,41 @@ section {
   text-align: left;
 }
 
-.skills {
+.about {
   margin-top: -5rem;
   padding-top: 7rem;
+  background: $bayofmany;
+  display: flex;
+  justify-content: space-evenly;
+  .profile_img {
+    display: grid;
+    place-content: center;
+    padding-top: 80px;
+    max-width: 300px;
+    img {
+      border-radius: 10%;
+    }
+  }
+  .about_text {
+    max-width: 700px;
+    color: $wildsand;
+  }
+  .about_head {
+    letter-spacing: 1px;
+    font-size: 25px;
+  }
+  .about_desc {
+    font-size: 18px;
+  }
+}
+
+.skills {
   background: $morningglory;
   h1 {
     font-size: 30px;
     font-weight: 700;
     color: $bermudagray;
-    margin-top: -3rem;
+    margin-top: -1rem;
     margin-bottom: 1rem;
   }
 }
