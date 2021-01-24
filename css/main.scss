@@ -170,11 +170,9 @@ section {
   display: flex;
   justify-content: space-evenly;
   .profile_img {
-    display: grid;
-    place-content: center;
-    padding-top: 80px;
-    max-width: 300px;
+    padding-top: 100px;
     img {
+      max-width: 300px;
       border-radius: 10%;
     }
   }
@@ -356,8 +354,16 @@ footer {
       max-width: 400px;
     }
   }
-  .skills {
+  .about {
     margin-top: 0;
+    padding-top: 2rem;
+    .about_text {
+      margin-left: 2rem;
+      max-width: 600px;
+    }
+    .about_desc {
+      font-size: 16px;
+    }
   }
 }
 
@@ -386,6 +392,27 @@ footer {
     padding: 2rem;
   }
 
+  .about {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    .profile_img {
+      padding-top: 10px;
+      img {
+        max-width: 200px;
+      }
+    }
+    .about_text {
+      max-width: 700px;
+      margin-left: 0;
+    }
+    .about_desc {
+      text-align: left;
+      font-size: 18px;
+      margin-bottom: 2rem;
+    }
+  }
+
   .skills {
     padding-top: 0;
     h1 {
@@ -401,6 +428,13 @@ footer {
         height: 50px;
         width: 50px;
       }
+    }
+  }
+
+  .project {
+    padding-top: 20px;
+    h1 {
+      text-align: center;
     }
   }
 
@@ -442,5 +476,10 @@ footer {
   }
   .contact-desc {
     width: 100%;
+  }
+  .about {
+    .about_desc {
+      font-size: 16px;
+    }
   }
 }

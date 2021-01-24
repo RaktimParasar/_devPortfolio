@@ -196,14 +196,11 @@ section {
 }
 
 .about .profile_img {
-  display: -ms-grid;
-  display: grid;
-  place-content: center;
-  padding-top: 80px;
-  max-width: 300px;
+  padding-top: 100px;
 }
 
 .about .profile_img img {
+  max-width: 300px;
   border-radius: 10%;
 }
 
@@ -409,8 +406,16 @@ footer .flat-icons {
   .hero-wrapper .hero-image {
     max-width: 400px;
   }
-  .skills {
+  .about {
     margin-top: 0;
+    padding-top: 2rem;
+  }
+  .about .about_text {
+    margin-left: 2rem;
+    max-width: 600px;
+  }
+  .about .about_desc {
+    font-size: 16px;
   }
 }
 
@@ -448,6 +453,31 @@ footer .flat-icons {
   section {
     padding: 2rem;
   }
+  .about {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+  .about .profile_img {
+    padding-top: 10px;
+  }
+  .about .profile_img img {
+    max-width: 200px;
+  }
+  .about .about_text {
+    max-width: 700px;
+    margin-left: 0;
+  }
+  .about .about_desc {
+    text-align: left;
+    font-size: 18px;
+    margin-bottom: 2rem;
+  }
   .skills {
     padding-top: 0;
   }
@@ -464,6 +494,12 @@ footer .flat-icons {
   .skills-container ul li .skills-icon {
     height: 50px;
     width: 50px;
+  }
+  .project {
+    padding-top: 20px;
+  }
+  .project h1 {
+    text-align: center;
   }
   .project-container {
     display: -webkit-box;
@@ -505,6 +541,9 @@ footer .flat-icons {
   }
   .contact-desc {
     width: 100%;
+  }
+  .about .about_desc {
+    font-size: 16px;
   }
 }
 /*# sourceMappingURL=main.css.map */
