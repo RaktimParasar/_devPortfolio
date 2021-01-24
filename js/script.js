@@ -4,6 +4,19 @@
 //   elmnt.scrollIntoView();
 // });
 
+// copytoClipboard
+document.getElementById("copy").addEventListener("click", () => {
+  const text = document.getElementById("texttocopy");
+  navigator.clipboard.writeText(text.innerText);
+  const tooltip = document.getElementById("myTooltip");
+  tooltip.innerHTML = "Email Copied";
+});
+
+document.getElementById("copy").addEventListener("mouseout", () => {
+  const tooltip = document.getElementById("myTooltip");
+  tooltip.innerHTML = "Copy to clipboard";
+});
+
 // //animation
 // gsap.registerPlugin(ScrollTrigger);
 // var t1 = gsap.timeline();

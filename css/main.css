@@ -379,6 +379,50 @@ section {
   font-size: 16px;
 }
 
+.email_copy {
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.email_copy .tooltiptext {
+  visibility: hidden;
+  width: 140px;
+  background: #91c5df;
+  color: #274484;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 90%;
+  margin-left: -75px;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+}
+
+.email_copy .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #91c5df transparent transparent transparent;
+}
+
+.email_copy:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+.email_copy .clipboard {
+  cursor: pointer;
+  margin-left: 1rem;
+}
+
 footer {
   background: #333333;
   color: #1e90d9;
