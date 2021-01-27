@@ -460,6 +460,9 @@ footer .flat-icons {
   .about .about_desc {
     font-size: 16px;
   }
+  .contact-main {
+    width: 300px;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -587,6 +590,9 @@ footer .flat-icons {
   }
   .about .about_desc {
     font-size: 16px;
+  }
+  .contact-main {
+    width: unset;
   }
 }
 /*# sourceMappingURL=main.css.map */
