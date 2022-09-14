@@ -1,7 +1,7 @@
 //explore buttonScroll
 document.getElementById("explore").addEventListener("click", () => {
   var elmnt = document.getElementById("about_me");
-  elmnt.scrollIntoView();
+  elmnt.scrollIntoView({ behavior: "smooth" });
 });
 
 // copytoClipboard
